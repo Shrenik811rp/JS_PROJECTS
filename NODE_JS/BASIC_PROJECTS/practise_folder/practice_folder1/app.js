@@ -1,15 +1,13 @@
-const fs_mod = require('fs');
 
- fs_mod.createReadStream();
+//express module returns a function
+const express = require('express')
 
+//call express modules
+const server = express()
 
+server.get('/',(my_request,my_response)=>{
+my_response.send("Server listening")
+})
 
-//the readstream inherits properties from event emitter
-//so it listens for 'data'
-/*we are going to get a "chunk" of data
--- which means only parts of data and not whole data at once, little by little */
-/*
-const read_stream =
-read_stream.on('data',(chunk)=>{
-console.log(`Data : ${chunk}\n`)
-})*/
+//server listens at port 5000
+server.listen(5000)
