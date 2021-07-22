@@ -1,0 +1,48 @@
+
+section{
+	width: 100%;
+	font-weight: 5rem;
+	text-align: center;
+	color: whitesmoke;
+	display: grid;
+	grid-row-gap: 50px;
+	align-items:start;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+article{
+	padding-top: 10px;
+}
+
+@media screen and (min-width:785px){
+	section{
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+
+.book_list h3{
+	color: rgb(248, 165, 10);
+}
+.book_detail{
+	padding-bottom:50px;
+	background: rgb(107, 70, 150);
+	margin: 10px;
+	border-radius: 50px;
+}
+.book_list img{
+	max-width: 50%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.book_list p{
+	margin-top: 10px;
+	margin-left: 10px;
+}
