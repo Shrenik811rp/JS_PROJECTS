@@ -1,0 +1,16 @@
+html, body {
+  margin-top: 0px;
+  padding: 5px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: darkorange;
+}
+canvas {
+  display: inline-block;
+  border-radius: 20px;
+
+}
