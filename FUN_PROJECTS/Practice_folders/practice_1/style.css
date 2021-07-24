@@ -1,0 +1,11 @@
+*{
+	margin:10px;
+	padding: 5px;
+	align-items: center;
+	
+	border-radius: 20px;	
+}
+body{
+    
+	display: inline-block;
+}
