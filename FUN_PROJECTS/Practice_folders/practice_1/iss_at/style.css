@@ -1,0 +1,21 @@
+*{
+	margin:1px;
+	padding: 0px;
+	border-radius: 10px;	
+}
+body{
+	font-size: 30px;
+    text-align: center;
+	display: inline-block;
+}
+p{
+	font-size: 40px;
+}
+#mapid { 
+	display: inline-block;
+	margin: 15px;
+	height: 900px;
+	width: 1050px;
+ }
+
+
