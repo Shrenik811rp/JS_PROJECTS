@@ -12,37 +12,35 @@
     <header>
         <a href="#" class="logo">Portfolio</a>
 
-        <div class="toggle"></div>
+        <div class="toggle" onclick="toggleMenu()"> </div>
 
-        <ul>
-            <li><a href="#home"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Skills</li>
-            <li><a href="#"></a>Projects</li>
-            <li><a href="#"></a>Testimonial</li>
-            <li><a href="#"></a>Contact</li>
+        <ul class="menu">
+            <li> <a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu()">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
-
-
     </header>
+
     <section class="banner" id='home'>
         <div class="textBx">
             <h2>
                 Hello,I'm <br>
                 <span>
                     Shrenik
-                </span>
-               
+                </span>  
             </h2>
             <h3>Front end dev</h3>
-            <a href="#" class="btn">
+            <a href="#about" class="btn">
                 About Me
             </a>
         </div>
     </section>
 
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
         </div>
@@ -58,7 +56,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skill" id="skill">
         <div class="heading white">
             <h2>Skills</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt facere excepturi porro maiores qui, cupiditate animi autem sint fugit totam omnis dolorum aliquam? Totam possimus illum sit dolorum dignissimos.</p>
@@ -91,7 +89,7 @@
         
     </section>
 
-    <section class="project">
+    <section class="project" id="project">
         <div class="heading">
             <h2>Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt facere excepturi porro maiores qui, cupiditate animi autem sint fugit totam omnis dolorum aliquam? Totam possimus illum sit dolorum dignissimos.</p>
@@ -117,7 +115,7 @@
         </div>
     </section>
 
-    <section class="testimonial">
+    <section class="testimonial" id="testimonial">
         <div class="heading">
             <h2>Testimonial</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eos.</p>
@@ -137,9 +135,9 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="heading white">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eos.</p>
         </div>
 
@@ -197,11 +195,18 @@
         <img src="https://img.icons8.com/material-outlined/24/26e07f/copyright.png"/>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
-    <script type ="text/javascript">
-    window.addEventListener('scroll',()=>{
-        let header = document.querySelector('header')
+    <script>
+    window.addEventListener('scroll',function(){
+        let header = document.querySelector('header');
         header.classList.toggle('sticky',window.scrollY > 0)
-    })
+    });
+
+    function toggleMenu(){
+        let menuToggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
     </script>
     
 </body>
