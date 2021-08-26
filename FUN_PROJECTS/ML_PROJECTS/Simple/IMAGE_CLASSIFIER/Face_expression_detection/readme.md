@@ -4,6 +4,10 @@
 ## Demo of what FaceAPI can do:
 ![](https://user-images.githubusercontent.com/31125521/57224752-ad3dc080-700a-11e9-85b9-1357b9f9bca4.gif)
 
+## Getting data:
+- We have to pretrained dataset from [model](https://github.com/Shrenik811rp/JS_PROJECTS/tree/master/FUN_PROJECTS/ML_PROJECTS/Simple/IMAGE_CLASSIFIER/Face_expression_detection/models) folder
+- Then add faceAPI.js data
+
 ## Recognizing Face Expressions
 - Face expression recognition can be performed for detected faces as follows:
 Detect all faces in an image + recognize face expressions of each face. 
