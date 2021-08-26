@@ -23,7 +23,7 @@ Detect all faces in an image + computes 68 Point Face Landmarks for each detecte
 ```javascript
 const detectionsWithLandmarks = await faceapi.detectAllFaces(input).withFaceLandmarks()
 ```
-
+![](https://miro.medium.com/max/1302/1*GCqsG3c2Xt-d9JQGUpytpQ.gif)
 ## Download the necessary apis:
 ### [API_link](https://github.com/Shrenik811rp/JS_PROJECTS/blob/master/FUN_PROJECTS/ML_PROJECTS/Simple/IMAGE_CLASSIFIER/Face_expression_detection/face-api.min.js)
 
