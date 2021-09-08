@@ -3,6 +3,8 @@
 
 let arr = []
 let i=0,j=0
+
+//initial code setup with random values
 function setup(){
   createCanvas(windowWidth,windowHeight)
   
@@ -16,6 +18,8 @@ function setup(){
 function draw(){
   
   background(0)
+  
+  /*Bubble sort implementation*/
   if(i<arr.length){
     for(j=0;j<arr.length - i - 1;j++){
       
@@ -38,7 +42,7 @@ function draw(){
  
 }
 
-
+//swap function
 function swap(arr,a,b){
   
   let temp = arr[a]
